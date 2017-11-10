@@ -9,7 +9,7 @@
   General
   ========================================================================== */
 body {
-	color:#000;
+	color:#fff;
 	background: #fff;
 	font-size: 16px;
 	line-height: 1.6em;
@@ -20,21 +20,13 @@ body {
 body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family: 'Varela Round', sans-serif;
 }
-h1, h2, h3, h4, h5, h6 {
-	color:rgba(1, 82, 255, 0.54);
-}
 
-h1,h2,h3,h4,h5,h6 {
-	font-style: normal;
-	margin:30px 0 40px 0;
-}
-h1 { font-size: 50px; line-height: 30px; }
-h2 { font-size: 40px; }
-h3 { font-size: 24px; }
-h4 { font-size: 18px; }
-h5 { font-size: 16px; }
-.txt-uppercase { text-transform: uppercase; }
 
+.header__banner span {
+	display:inline-block;
+	padding:10px 10px;
+	border:#fff solid 8px
+   }
 
 a:hover {
 	text-decoration: none;
@@ -57,12 +49,12 @@ a:hover {
  ========================================================================== */
 .row {
 	z-index: 9999;
+	padding-bottom: 20px;
 }
 
 .content,.container {
 	overflow: hidden;
 }
-
 
 /*===========================
   --- Section ----
@@ -78,9 +70,26 @@ a:hover {
 }
 
 .heading-text{
-    color:#fff;
+	color:#fff;
 }
 
+/*===========================
+  --- Home Page section ----
+=========================== */
+
+#Homepage {
+    padding: 100px 0 50px;
+	background-color: #1A1A1A;
+	background-size: 100%;
+}
+
+.main-text {
+	font-size: 40px;
+	font-weight: 500;
+    vertical-align: central;
+    vertical-align: middle;
+	color:#fff;
+}
 
 /*===========================
   --- Header & menu ----
@@ -168,24 +177,7 @@ h1 a.navbar-brand {
 }
 
 
-/*===========================
-  --- Home Page section ----
-=========================== */
 
-
-#Homepage {
-    padding: 100px 0 60px;
-    background-color:#E7484E;
-}
-
-
-.main-text {
-	font-size: 40px;
-	font-weight: 500;
-    vertical-align: central;
-    vertical-align: middle;
-    color:#fff;
-}
   
 
 
@@ -193,7 +185,7 @@ h1 a.navbar-brand {
 About Section
 =========================== */
 #section-about {
-   background-color: #E7484E;
+   background-color: #1A1A1A;
 }
 .member-photo {
 	box-sizing:border-box;
@@ -221,7 +213,7 @@ About Section
     padding-top: 20px;
 }
 #section-works {
-    background-color: #E7484E;
+    background-color: #1A1A1A;
 }
 nav#filter a {
     padding: 10px!important;
@@ -328,17 +320,12 @@ nav#filter a {
 	font-size: 12px;
 }
 
-/*===========================
-  --- Services Section----
-=========================== */
-#section-services {
-    background-color: #E7484E;
-}
+
 /*===========================
   --- Contact Section----
 =========================== */
 #section-contact {
-    background-color: #E7484E;
+    background-color: #1A1A1A;
 }
 .validation {
 	display:none;
@@ -438,7 +425,7 @@ div.Contact-response-output {
 .footer {
 	background: #242424;
 	margin: 0;
-    padding: 30px 0 10px; 
+    padding: 30px 0 20px; 
     color:#fff;
 }
 
@@ -505,6 +492,9 @@ a.scrollup:hover{
 }
 .social-network a.icoGoogle:hover {
 	background-color:#BD3518;
+}
+.social-network a.icoGitHub:hover {
+	background-color:#000000;
 }
 .social-network a.icoVimeo:hover {
 	background-color:#0590B8;
@@ -597,7 +587,7 @@ a.socialIcon:hover, .socialHoverClass {
 }
 /* scrollup link */
 a.scrollup{
-	background:#E7488E;
+	background: #1a1a1a;;
 }
 /* Services icon */
 .no-touch .hi-icon-effect-1a .hi-icon {
