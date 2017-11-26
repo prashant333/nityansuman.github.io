@@ -293,21 +293,12 @@
 <script src="js/custom.js"></script>
 
 <script>
-	function initialize() {
-		var mapOptions = {
-			zoom: 11,
-			center: new google.maps.LatLng(12.9716, 77.5946)
-		};
-		
-		var map = new google.maps.Map(document.getElementById('map-canvas'),
-			mapOptions);
-	}
-	
-	function loadScript() {
-		var script = document.createElement('script');
-		script.type = 'text/javascript';
-		script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' + 'callback=initialize';
-		document.body.appendChild(script);
-	}
-	window.onload = loadScript;
+function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(12.972442, 77.580643),
+        zoom: 10,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+    }
+var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+} 
 </script>
