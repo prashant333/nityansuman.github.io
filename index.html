@@ -1,42 +1,93 @@
 <!DOCTYPE>
 <html>
-    <head>
-        <title>Kumar Nityan Suman | Data Science | Machine Learning | Developer</title>
+
+    <head><!-- HEAD -->
+        <title>Kumar Nityan Suman | Data Science & Machine Learning | Developer</title>
 
         <meta content="kumar nityan suman, nityan suman, portfolio, machine learning,
-            data science, software developer, software, web, computer science, pesit, pes" name="keywords"/>
+            data science, software developer, software, web, computer science, PESIT, PES" name="keywords"/>
         <meta content="This is the portfolio website for Kumar Nityan Suman." name="description"/>
         <meta content="Kumar Nityan Suman" name="author"/>
-        <meta content="notranslate" name="google"/>
+        <meta content="no-translate" name="google"/>
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
 
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/custom.css" rel="stylesheet" type="text/css"/>
 
-        <script src="js/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,4000,700" rel="stylesheet" type="text/css"/>
+    </head><!-- END OF HEAD -->
 
-    </head>
-    <body class="mainpage" id="mainpage">
-        <div class="header" id="page1"> <!-- whole visible page -->
-            <div class="top"> <!-- top half -->
+    <body class="body" data-spy="scroll" data-target=".navbar">
+        <!-- BODY -->
+        <div class="header" id="id-header">
+            <!-- HEADER SECTION -->
+            <nav class="navigation navbar navbar-fixed-top">
+                <!-- NAVIGATION SECTION -->
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>                        
+                        </button>
+                    </div>
+                    <div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#" class="navigation-2"><b>home</b></a></li>
+                                <li><a href="#id-about" class="navigation-2">about</a></li>
+                                <li><a href="#id-projects" class="navigation-2">projects</a></li>
+                                <li><a href="docs/kumar-nityan-suman-resume.pdf" target="_blank" class="navigation-2">resume</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav><!-- END OF NAVIGATION -->
+            <div class="top">
                 <div class="top-text">kumar nityan suman</div>
             </div>
-            <div class="bottom"><!-- bottom-half -->
-                <span  class="bottom-text">
-                    ~$ <span id="code"></span>
-                </span>
+            <div class="code-section">
+                <div class="code-section-running">
+                    <span class="code-text">~$ <span id="code"></span></span>
+                </div>
             </div>
-        </div>
-    </body>
+        </div><!-- END OF HEADER -->
+
+        <div class="about" id="id-about">
+            <!-- ABOUT -->
+            <div class="container">
+                <div class="row">
+                    <center>
+                        <p class="about-text">
+                        I am an <strong>undergraduate</strong> student in <strong>Information Science</strong> at the <strong>PESIT</strong>.<br>
+                        I develope beautiful solutions to the real life ugly problems.<br>
+                        I am obsessed with creating <strong>modular</strong>, <strong>maintainable</strong>, and
+                        <strong>proficient</strong> programs that does the job done.<br>
+                        Currently working in the field of <strong>Machine Learning</strong> & <strong>Data Sciences</strong>.
+                        </p>
+                    </center>
+                </div>
+            </div>
+        </div><!-- END OF ABOUT -->
+    </body><!-- END OF BODY -->
+
     <!-- javascript -->
     <script>
+        //
+        //
+        //
         var i = 0, j = 0;
-        var textArray = ['Hi, Welcome!', 'I am a Pythonist.',
-                        'I Create Modular, Maintainable and Proficient code.',
-                        'My Field of Work is Machine Learning and Data Sciences.'];
+        var textArray = ['Hi, Welcome!', 'I am a Pythonist.', 'I am in love with data.',
+                        'I do Machine Learning.'
+                        /*'Create Modular, Maintainable and Proficient code.',
+                        'My Field of Work is Machine Learning and Data Sciences.'*/];
         var txt = textArray[0];
         var speed = 125;
         
@@ -75,5 +126,8 @@
             var currentTime = new Date().getTime();
             while(currentTime + miliseconds >= new Date().getTime()){}
         }
+        //
+        //
+        //
         </script>
 </html>

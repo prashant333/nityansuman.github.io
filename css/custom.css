@@ -1,4 +1,4 @@
-.mainpage{
+.body{
     color: #313133;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif, serif;
     margin: 0px;
@@ -22,15 +22,39 @@
     font-weight: 700;
     text-transform: uppercase;
     padding-left: 1%;
-    background: rgba(255, 255, 0, 0.90);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background: rgba(255, 255, 0, 0.80);
 }
-.bottom{
+.code-section{
     font-family: Courier New, Courier, monospace;
     color: white;
     font-size: 30px;
+}
+.code-section-running{
     padding-left: 1%;
     padding-top: 1%;
 }
-.bottom-text{
+.code-text{
     background-color: black;
+}
+.navigation{
+    font-family: Courier New, Courier, monospace;
+    font-size: 20px;
+    background: rgba(49, 49, 46, 0.6);
+    text-transform: uppercase;
+}
+.navigation-2 {
+    color: yellow;
+}
+.about{
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/watermark.png"); 
+}
+.about-text{
+    color: slategray;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding-top: 10%;
 }
