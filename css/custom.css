@@ -26,6 +26,17 @@
     padding-bottom: 1px;
     background: rgba(255, 255, 0, 0.80);
 }
+.top-text1{
+    font-family: "Roboto Slab";
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 1%;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background: rgba(255, 255, 0, 0.80);
+}
 .code-section{
     font-family: Courier New, Courier, monospace;
     color: white;

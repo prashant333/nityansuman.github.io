@@ -47,7 +47,7 @@
                 </div>
             </nav><!-- END OF NAVIGATION -->
             <div class="top">
-                <div class="top-text">kumar nityan suman</div>
+                <div class="top-text" id="top-text">kumar nityan suman</div>
             </div>
             <div class="code-section">
                 <div class="code-section-running">
@@ -125,7 +125,7 @@
         // show-hide navigation bar based on the size of the screen
         //
         function toggleDiv(){
-            if($(window).width() < 700){
+            if($(window).width() < 758){
                 $("nav.navbar").hide();
             }
             else{
@@ -138,7 +138,16 @@
                 toggleDiv();
             });
         });
-        // 
-        //
+
+        $(window).on('resize', function(){
+            if($(window).width() < 758){
+                $('#top-text').addClass('top-text1');
+                $('#top-text').removeClass('top-text');
+            }
+            else{
+                $('#top-text').addClass('top-text');
+                $('#top-text').removeClass('top-text1');
+            }
+        })
         </script>
 </html>
