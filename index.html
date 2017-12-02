@@ -139,7 +139,8 @@
             });
         });
 
-        $(window).on('resize', function(){
+        // set the css elements based on the screen size
+        function setSize(){
             if($(window).width() < 758){
                 $('#top-text').addClass('top-text1');
                 $('#top-text').removeClass('top-text');
@@ -160,6 +161,12 @@
                 $('#code-section').addClass('code-section');
                 $('#code-section').removeClass('code-section-small');
             }
-        })
+        }
+        $(document).ready(function (){
+            setSize();
+            $(window).resize(function(){
+                setSize();
+            });
+        });
         </script>
 </html>
