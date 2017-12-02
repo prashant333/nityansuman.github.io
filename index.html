@@ -136,6 +136,7 @@
         });
 
         // set the css elements based on the screen size
+        //
         function setSize(){
             if($(window).width() < 758){
                 $('#top-text').addClass('top-text1');
@@ -158,6 +159,7 @@
                 $('#code-section').removeClass('code-section-small');
             }
         }
+        // recurrsive function call to check any change in the size of the screen
         $(document).ready(function (){
             setSize();
             $(window).resize(function(){
