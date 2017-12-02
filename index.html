@@ -11,33 +11,29 @@
         <meta content="no-translate" name="google"/>
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
 
-        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/custom.css" rel="stylesheet" type="text/css"/>
-
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,4000,700" rel="stylesheet" type="text/css"/>
     </head><!-- END OF HEAD -->
 
-    <body class="body" data-spy="scroll" data-target=".navbar">
+    <body class="body">
         <!-- BODY -->
         <div class="header" id="id-header">
             <!-- HEADER SECTION -->
             <nav class="navigation navbar navbar-fixed-top">
                 <!-- NAVIGATION SECTION -->
                 <div class="container-fluid">
-                    <div class="navbar-header">
+<!--                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>                        
+                                <span class="icon-bar"><a href="#"><i class="fa fa-globe foldable-button"></i></a></span>                       
                         </button>
-                    </div>
+                    </div> -->
                     <div>
                         <div class="collapse navbar-collapse" id="myNavbar">
                             <ul class="nav navbar-nav">
@@ -80,8 +76,7 @@
 
     <!-- javascript -->
     <script>
-        //
-        //
+        // type-writter effect
         //
         var i = 0, j = 0;
         var textArray = ['Hi, Welcome!', 'I am a Pythonist.', 'I am in love with data.',
@@ -90,7 +85,7 @@
                         'My Field of Work is Machine Learning and Data Sciences.'*/];
         var txt = textArray[0];
         var speed = 125;
-        
+        // type-writer effect: message to display messages
         function typeWriter(){
                 if(i < txt.length){
                     document.getElementById("code").innerHTML += txt.charAt(i);
@@ -113,7 +108,7 @@
                 }
         }
         typeWriter();
-
+        // type-writer effect: function to change the message text
         function typeWriter2(){
             if(j == textArray.length - 1){
                 j = -1;
@@ -121,13 +116,29 @@
             txt = textArray[++j];
             typeWriter();
         }
-
+        // type-writer effect: function to pause the function execution
         function sleep(miliseconds){
             var currentTime = new Date().getTime();
             while(currentTime + miliseconds >= new Date().getTime()){}
         }
+
+        // show-hide navigation bar based on the size of the screen
         //
-        //
+        function toggleDiv(){
+            if($(window).width() < 700){
+                $("nav.navbar").hide();
+            }
+            else{
+                $("nav.navbar").show();
+            }
+        }
+        $(document).ready(function (){
+            toggleDiv();
+            $(window).resize(function(){
+                toggleDiv();
+            });
+        });
+        // 
         //
         </script>
 </html>
