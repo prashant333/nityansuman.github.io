@@ -4,6 +4,15 @@
     margin: 0px;
     height: 100%;
 }
+.navigation{
+    font-family: Courier New, Courier, monospace;
+    font-size: 20px;
+    background: rgba(49, 49, 46, 0.6);
+}
+.navigation-2 {
+    color: yellow;
+    text-transform: uppercase;
+}
 .header{
     height: 100%;
     width: 100%;
@@ -24,7 +33,7 @@
     padding-left: 1%;
     padding-top: 1px;
     padding-bottom: 1px;
-    background: rgba(255, 255, 0, 0.80);
+    background: rgba(255, 255, 0, 0.50);
 }
 .top1{
     padding-top: 50%;
@@ -57,15 +66,7 @@
 .code-text{
     background-color: black;
 }
-.navigation{
-    font-family: Courier New, Courier, monospace;
-    font-size: 20px;
-    background: rgba(49, 49, 46, 0.6);
-    text-transform: uppercase;
-}
-.navigation-2 {
-    color: yellow;
-}
+
 .about{
     height: 100%;
     width: 100%;
@@ -76,8 +77,4 @@
     text-transform: uppercase;
     font-size: 30px;
     padding-top: 10%;
-}
-.foldable-button{
-    color: white;
-
 }
