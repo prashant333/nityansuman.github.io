@@ -46,10 +46,10 @@
                     </div>
                 </div>
             </nav><!-- END OF NAVIGATION -->
-            <div class="top">
+            <div class="top" id="top">
                 <div class="top-text" id="top-text">kumar nityan suman</div>
             </div>
-            <div class="code-section">
+            <div class="code-section" id="code-section">
                 <div class="code-section-running">
                     <span class="code-text">~$ <span id="code"></span></span>
                 </div>
@@ -143,10 +143,22 @@
             if($(window).width() < 758){
                 $('#top-text').addClass('top-text1');
                 $('#top-text').removeClass('top-text');
+
+                $('#top').addClass('top1');
+                $('#top').removeClass('top');
+
+                $('#code-section').addClass('code-section-small');
+                $('#code-section').removeClass('code-section');
             }
             else{
                 $('#top-text').addClass('top-text');
                 $('#top-text').removeClass('top-text1');
+                
+                $('#top').addClass('top');
+                $('#top').removeClass('top1');
+
+                $('#code-section').addClass('code-section');
+                $('#code-section').removeClass('code-section-small');
             }
         })
         </script>
