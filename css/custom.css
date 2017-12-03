@@ -35,29 +35,10 @@
     padding-bottom: 1px;
     background: rgba(255, 255, 0, 0.80);
 }
-.top1{
-    padding-top: 50%;
-}
-.top-text1{
-    font-family: "Roboto";
-    color: white;
-    font-size: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding-left: 1%;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    background: rgba(255, 255, 0, 0.80);
-}
 .code-section{
     font-family: Courier New, Courier, monospace;
     color: white;
-    font-size: 30px;
-}
-.code-section-small{
-    font-family: Courier New, Courier, monospace;
-    color: white;
-    font-size: 15px;
+    font-size: 25px;
 }
 .code-section-running{
     padding-left: 1%;
@@ -66,15 +47,33 @@
 .code-text{
     background-color: black;
 }
-
 .about{
     height: 100%;
     width: 100%;
     background-image: url("../images/watermark.png"); 
 }
 .about-text{
-    color: slategray;
+    color: rgb(52, 52, 52);
     text-transform: uppercase;
     font-size: 30px;
     padding-top: 10%;
+}
+
+
+@media screen and (max-width: 758px){
+    .about-text{
+        font-size: 15px;
+    }
+    .code-section{
+        font-family: Courier New, Courier, monospace;
+        color: white;
+        font-size: 15px;
+    }
+    .top{
+        padding-top: 50%;
+    }
+    .top-text{
+        font-size: 30px;
+        font-weight: 700;
+    }
 }

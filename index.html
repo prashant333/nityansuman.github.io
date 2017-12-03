@@ -58,12 +58,17 @@
                 <div class="row">
                     <center>
                         <p class="about-text">
-                        I am an <strong>undergraduate</strong> student in <strong>Information Science</strong> at the <strong>PESIT</strong>.<br>
-                        I develope beautiful solutions to the real life ugly problems.<br>
+                        I am an <strong>undergraduate</strong> student in <strong>Information Science</strong> at <strong>PESIT</strong>.
+                        I develope beautiful solutions to the real life ugly problems.
                         I am obsessed with creating <strong>modular</strong>, <strong>maintainable</strong>, and
-                        <strong>proficient</strong> programs that does the job done.<br>
+                        <strong>proficient</strong> programs that gets the job done.
                         Currently working in the field of <strong>Machine Learning</strong> & <strong>Data Sciences</strong>.
                         </p>
+                    </center>
+                </div>
+                <div class="row">
+                    <center>
+                        <img src="images/pesitsouth.png" alt="pesit-south-logo"/>
                     </center>
                 </div>
             </div>
@@ -134,37 +139,7 @@
                 toggleDiv();
             });
         });
-
-        // set the css elements based on the screen size
         //
-        function setSize(){
-            if($(window).width() < 758){
-                $('#top-text').addClass('top-text1');
-                $('#top-text').removeClass('top-text');
-
-                $('#top').addClass('top1');
-                $('#top').removeClass('top');
-
-                $('#code-section').addClass('code-section-small');
-                $('#code-section').removeClass('code-section');
-            }
-            else{
-                $('#top-text').addClass('top-text');
-                $('#top-text').removeClass('top-text1');
-                
-                $('#top').addClass('top');
-                $('#top').removeClass('top1');
-
-                $('#code-section').addClass('code-section');
-                $('#code-section').removeClass('code-section-small');
-            }
-        }
-        // recurrsive function call to check any change in the size of the screen
-        $(document).ready(function (){
-            setSize();
-            $(window).resize(function(){
-                setSize();
-            });
-        });
+        //
         </script>
 </html>
