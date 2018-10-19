@@ -1,7 +1,6 @@
 .body{
     color: #313133;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif, serif;
-    margin: 0px;
     height: 100%;
 }
 .navigation{
@@ -10,7 +9,7 @@
     background: rgba(49, 49, 46, 0.6);
 }
 .navigation-2 {
-    color: yellow;
+    color: rgba(255, 115, 0, 0.8);
     text-transform: uppercase;
 }
 .header{
@@ -21,31 +20,26 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.top{
-    padding-top: 20%;
-}
-.top-text{
-    font-family: "Roboto Slab";
-    color: white;
-    font-size: 75px;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding-left: 1%;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    background: rgba(255, 255, 0, 0.80);
-}
 .code-section{
-    font-family: Courier New, Courier, monospace;
+    font-family: Courier, monospace;
     color: white;
     font-size: 25px;
 }
 .code-section-running{
     padding-left: 1%;
-    padding-top: 1%;
+    padding-top: 20%;
 }
 .code-text{
-    background-color: black;
+    font-family: "Roboto Slab";
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 1%;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background: transparent;
+    border: solid 1px;
 }
 .about{
     height: 100%;
@@ -68,12 +62,5 @@
         font-family: Courier New, Courier, monospace;
         color: white;
         font-size: 15px;
-    }
-    .top{
-        padding-top: 50%;
-    }
-    .top-text{
-        font-size: 30px;
-        font-weight: 700;
     }
 }
