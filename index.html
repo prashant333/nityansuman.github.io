@@ -40,12 +40,9 @@
                     </div>
                 </div>
             </nav><!-- END OF NAVIGATION -->
-            <div class="top" id="top">
-                <div class="top-text" id="top-text">kumar nityan suman</div>
-            </div>
-            <div class="code-section" id="code-section">
+            <div class="code-section">
                 <div class="code-section-running">
-                    <span class="code-text">~$ <span id="code"></span></span>
+                    <span class="code-text">~$ <span id="top-text"></span></span>
                 </div>
             </div>
         </div><!-- END OF HEADER -->
@@ -76,8 +73,7 @@
         // type-writter effect
         //
         var i = 0, j = 0;
-        var textArray = ['Hi, Welcome!', 'I am a Pythonist.', 'I am in love with data.',
-                        'I do Machine Learning.'
+        var textArray = ["Kumar Nityan Suman"
                         /*'Create Modular, Maintainable and Proficient code.',
                         'My Field of Work is Machine Learning and Data Sciences.'*/];
         var txt = textArray[0];
@@ -85,22 +81,21 @@
         // type-writer effect: message to display messages
         function typeWriter(){
                 if(i < txt.length){
-                    document.getElementById("code").innerHTML += txt.charAt(i);
+                    document.getElementById("top-text").innerHTML += txt.charAt(i);
                     i++;
                     setTimeout(typeWriter, speed);
                 }
                 else if(i == txt.length){
-                    document.getElementById("code").style.backgroundColor = "white";
-                    document.getElementById("code").style.color = "black";
+                    document.getElementById("top-text").style.backgroundColor = "black";
                     i++;
                     setTimeout(typeWriter, speed);
                 }
                 else{
                     i = 0;
                     sleep(500);
-                    document.getElementById("code").innerHTML = " ";
-                    document.getElementById("code").style.backgroundColor = "black";
-                    document.getElementById("code").style.color = "white";
+                    document.getElementById("top-text").innerHTML = " ";
+                    document.getElementById("top-text").style.backgroundColor = "transparent";
+                    document.getElementById("top-text").style.color = "white";
                     typeWriter2();
                 }
         }
